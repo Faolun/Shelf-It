@@ -1,0 +1,1 @@
+INSERT INTO whiskey (name) VALUES ('Lagavulin 16');
