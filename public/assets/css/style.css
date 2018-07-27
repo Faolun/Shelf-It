@@ -1,3 +1,21 @@
+body{
+    font-family: 'Vollkorn', serif;
+}
+
+h1, h3{
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 20px;
+    margin-bottom: 0;
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+}
+h3{
+    font-size: 20px;
+    margin-top: 0;
+    padding: 0px 0px 10px 0px;
+}
 
 .whiskeyDiv{
     margin: -1px;
@@ -5,6 +23,7 @@
     padding: 12px;
     border-style: solid;
     border-width: 1px;
+    text-align: center;
 }
 
 .tasteButton{
@@ -12,6 +31,7 @@
 }
 
 .whiskeyName{
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 18px;
+    
 }
+

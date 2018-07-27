@@ -1,6 +1,7 @@
 <div class="container">
-    <h1>Shelf It</h1>
     <div class="row z-depth-3">
+        <h1>Shelf It</h1>
+        <h3>Whiskey Tasting</h3>
         <div class="col s6 newWhiskey">
             <ul>
                 {{#each whiskey}} {{#unless tasted}} {{> whiskey/whiskey-block}} {{/unless}} {{/each}}
@@ -19,13 +20,11 @@
     <br>
     <div class="row">
         <div class="col s12">
-            <p>enter a new whiskey</p>
-
             <div class="row">
                 <div class="col s12 whiskeyFormDiv z-depth-3">
-                    <form class="create-form">
+                    <form class="create-form" autocomplete="off">
                         <div class="input-field">
-                            <input id="name" name="name" type="text" class="validate">
+                            <input class="autocomplete" type="text" id="name" name="name">
                             <label for="name">Enter Whiskey</label>
                             <button type="submit" class="waves-effect waves-light btn-small addWhiskey">
                                 <i class="material-icons right">local_drink</i>Shelf It</button>
