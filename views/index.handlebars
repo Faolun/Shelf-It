@@ -9,11 +9,7 @@
         </div>
         <div class="col s6 imbibedWhiskey">
             <ul>
-                {{#each whiskey}} {{#if tasted}}
-                <div class="whiskeyDiv whiskeyImbibed">
-                    <span class="whiskeyName">{{name}}</span>
-                </div>
-                {{/if}} {{/each}}
+                {{#each whiskey}} {{#if tasted}} {{> whiskey/whiskey-rem}} {{/if}} {{/each}}
             </ul>
         </div>
     </div>
@@ -26,7 +22,7 @@
                         <div class="input-field">
                             <input class="autocomplete" type="text" id="name" name="name">
                             <label for="name">Enter Whiskey</label>
-                            <button type="submit" class="waves-effect waves-light btn-small addWhiskey">
+                            <button type="submit" class="waves-effect waves-light btn-small amber accent-3 addWhiskey">
                                 <i class="material-icons right">local_drink</i>Shelf It</button>
                         </div>
                     </form>

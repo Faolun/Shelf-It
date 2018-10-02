@@ -17,12 +17,12 @@ var whiskey = {
     orm.update("whiskey", objColVals, condition, function (res) {
       cb(res);
     });
-    // },
-    //  //delete function if needed
-    //   delete: function(condition, cb) {
-    //   orm.delete("burgers", condition, function(res) {
-    //       cb(res);
-    //   });
+  },
+
+  delete: function (condition, cb) {
+    orm.delete("whiskey", condition, function (res) {
+      cb(res);
+    });
   }
 };
 

@@ -43,19 +43,17 @@ $(function () {
   });
 
 
-  //   // delete function if needed
-  //   $(".delete-whiskey").on("click", function(event) {
-  //       var id = $(this).data("id");
+  $(".cleanSlate").on("click", function (event) {
+    var id = $(this).data("id");
 
-  //       $.ajax("/api/whiskey/" + id, {
-  //           type: "DELETE"
-  //       }).then(function() {
-  //           // Reload the page to get the updated list
-  //           location.reload();
-  //       });
-  //   }); 
+    $.ajax("/api/whiskey/" + id, {
+      type: "DELETE"
+    }).then(function () {
+      location.reload();
+    });
+  });
 
-  
+
   $('input.autocomplete').autocomplete({
     data: whiskeyObj,
     limit: 10
@@ -563,5 +561,5 @@ var whiskeyObj = {
   "Woodford Reserve Double Oaked": null,
   "Yamazaki 12": null,
   "Yamazaki 18": null,
-  "Yoichi 26 SMWS 116.20": null   
+  "Yoichi 26 SMWS 116.20": null
 }
