@@ -32,18 +32,13 @@ node server.js
 ```
 The program will now run on localhost 3000.
 
-A working demo can be found on Heroku at {}
+A working demo can be found on Heroku at (https://shelf-it.herokuapp.com/)
 
 ## Built With
 
 * [Materialize](https://materializecss.com/) - The CSS framework used.
 
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
 ## Authors
 
 * **James Coates** - *Full Stack* - [Faolun](https://github.com/Faolun)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
